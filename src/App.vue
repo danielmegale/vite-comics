@@ -12,7 +12,7 @@ export default{ components: { AppFooter, AppMain,AppJumbotron, AppHeader } }
     <AppMain/>
     <AppJumbotron/>
     <AppFooter/>
-</template>
+  </template>
 
 <style>
   .container{

@@ -4,17 +4,22 @@
 
 
 <template>
-<main>
-    <div class="container">
-        dfsdkjhhfkj
+    <div>
+        <main>
+            <div class="container">
+                dfsdkjhhfkj
+            </div>
+            
+        </main>
+        <footer>
+            <div class="container">
+                <button>SING-UP NOW</button>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </footer>
     </div>
-
-</main>
-<footer>
-    <div class="container">
-        <button>SING-UP NOW</button>
-    </div>
-    </footer>
 </template>
 
 
@@ -28,7 +33,7 @@ main{
     background-size:30%,cover;
 }
 footer{
-    height: 70px;
+    height: 100px;
     background-color: #303030;
 }
 

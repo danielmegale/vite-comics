@@ -8,28 +8,28 @@
                         text:'DIGITAL COMICS'
                     },
                     {
-                        image:'buy-comics-digital-comics.png',
+                        image:'buy-comics-merchandise.png',
                         text:'DC MERCHANDISE'
                     },
                     {
-                        image:'buy-comics-digital-comics.png',
+                        image:'buy-comics-shop-locator.png',
                         text:'SUBSCRIPTION'
                     },
                     {
-                        image:'buy-comics-digital-comics.png',
+                        image:'buy-comics-subscriptions.png',
                         text:'COMIC SHOP LOCATOR'
                     },
                     {
-                        image:'buy-comics-digital-comics.png',
+                        image:'buy-dc-power-visa.svg',
                         text:'DC POWER VISA'
                     },
                 ],
             }
         },
         methods:{
-        getImage(image){
-                const url=new url(`../assets/img/${images.image}`,import.meta.url)  
-                console.log(url)
+        getImage(target){
+                const url=new URL(`../assets/img/${target}`,import.meta.url)  
+                return url.href
             }
         }
     }
@@ -37,18 +37,39 @@
 
 
 <template>
-    <figure>
-        <div v-for="image in images">
-            <img :src="getImage(image)" alt="">
-            <p></p>
-        </div>
-    </figure>
+    <div class="height">
+        <figure class="container">
+            <div class="row" v-for="image in images">
+                <img :src="getImage(image.image)" alt="">
+                <p>{{image.text }}</p>
+            </div>
+        </figure>
+    </div>
 </template>
 
 
 <style lang="scss" scoped>
-    figure{
+    div{
         background-color:#0282F9;
-        height: 108px;
+        img{
+            height: 50px;
+        }
+        figure{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        padding: 25px 0;
+        gap:10px;
+        color: #fff;
+    }
+    .height{
+        height:200px;
+    }
+    figure{
+        height: 100%;
     }
 </style>

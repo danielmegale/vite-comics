@@ -13,7 +13,8 @@
 <style lang="scss" scoped>
     main{
         background-color: #000;
-        padding: 35px 0;
+        padding: 50px 0;
+        height: 150px;
     }
     h1{
         color:#fff;

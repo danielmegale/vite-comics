@@ -73,11 +73,14 @@
 
 
 <style lang="scss" scoped>
+    header{
+        height: 140px;
+    }
     nav{
         display: flex;
         justify-content: space-between;
-        height: 70px;
         background-color: #fff;
+        padding: 15px 0;
     };
     ul{
         display: flex;
