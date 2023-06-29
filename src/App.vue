@@ -8,11 +8,17 @@ export default{ components: { AppFooter, AppMain,AppJumbotron, AppHeader } }
 </script>
 
 <template>
-  <AppHeader/>
-  <AppMain/>
-  <AppJumbotron/>
-  <AppFooter/>
+  <div class="container">
+    <AppHeader/>
+    <AppMain/>
+    <AppJumbotron/>
+    <AppFooter/>
+  </div>
 </template>
 
 <style>
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+}
 </style>
