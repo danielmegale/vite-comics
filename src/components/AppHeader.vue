@@ -62,11 +62,11 @@
     <header>
         <nav>
             <ul>
-                <li></li>
+                <li v-for="link in links" :key="link.text" :class="{active: link.current}"><a :href="link.url">{{link.text}}</a></li>
             </ul>
         </nav>
     </header>
 </template>
-<style>
+<style lang="scss">
 
 </style>
