@@ -58,8 +58,10 @@
         }
     }   
 </script>
+
+
 <template>
-    <header>
+    <header class="container">
         <nav>
             <img src="../assets/img/dc-logo.png" alt="">
             <ul>
@@ -68,31 +70,33 @@
         </nav>
     </header>
 </template>
+
+
 <style lang="scss" scoped>
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-    background-color: #fff;
-};
-ul{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    li{
-        a{
-            text-decoration: none;
-            color: #000;
-            padding: 17.5px 0;
-            &:hover{
-                color: #0282F9;
-                border-bottom: 5px solid #0282F9;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        background-color: #fff;
+    };
+    ul{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        li{
+            a{
+                text-decoration: none;
+                color: #000;
+                padding: 17.5px 0;
+                &:hover{
+                    color: #0282F9;
+                    border-bottom: 5px solid #0282F9;
+                };
+                &:active{
+                    background-color: #0282F9;
+                    color: #000
+                }
             };
-            &:active{
-                background-color: #0282F9;
-                color: #000
-            }
         };
     };
-};
 </style>
